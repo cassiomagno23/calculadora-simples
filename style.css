@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+  --color-font: #fff;
+  --color-bgcalc: #22252d;
+  --color-background: #efefef;
+  --color-bgtable: #292d36;
+  --color-bgcolorhover: #141518;
+  --color-bgbutton: #272b33;
+  --color-lightgreen: #26f3ce;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  background-color: var(--color-background);
+  height: 100vh;
+  color: var(--color-font);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+
+}
+.calculadora{
+  width: 15rem;
+  height: 27rem;
+  position: absolute;
+  background-color: var(--color-bgcalc);
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+#background-table{
+  background-color: var(--color-bgtable);
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: -10px;
+}
+.button{
+  width: 50px;
+  height: 50px;  
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: var(--color-bgbutton);
+  border: none;
+  margin: 2px;
+  color: var(--color-font);
+}
+#greenBtn{
+  color:var(--color-lightgreen);
+}
+#orangeBtn{
+  color: #d76061;
+}
+
+.button:hover{
+  background-color: var(--color-bgcolorhover);
+  transition: 0.5s;
+}
+
+#resultado{
+  background-color: var(--color-lightgreen);
+  width: 90%;
+  height: 20%;
+  padding-top: 15%;
+  margin: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color-bgcolorhover);
+  text-align: right;
+  border-radius: 10px
+}
